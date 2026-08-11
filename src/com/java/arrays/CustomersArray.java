@@ -7,7 +7,7 @@ public class CustomersArray {
 
         // 2. Instantiate new Customer objects using the Constructor and store them in the array
         customers[0] = new Customer(1, "Customer1", "customer@gmail.com", "987987789", (byte) 20, 'M');
-        customers[1] = new Customer(2, "customer2", "costomer@@gmail.com", "98798778", (byte) 30, 'F');
+        customers[1] = new Customer(2, "customer2", "customer2@@gmail.com", "98798778", (byte) 30, 'F');
         customers[2] = new Customer(5, "customer5", "customer3@gmail.com", "2352523423", (byte) 30, 'M');
         customers[3] = new Customer(2, "customer2", "customer4@gmail.com", "8797897897", (byte) 60, 'F');
         customers[4] = new Customer(4, "customer4", "customer5@gmail.com", "9345345433", (byte) 70, 'F');
@@ -25,7 +25,7 @@ public class CustomersArray {
                 highestAgeCustomer = customer; // Update if older customer found
             }
         }
-        System.out.println("\nCustomer with highest age:");
+        System.out.println("Customer with highest age:");
         highestAgeCustomer.displayCustomerDeatils();
 
         // 5. Calling a static helper method to count male customers
