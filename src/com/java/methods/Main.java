@@ -12,5 +12,17 @@ public class Main {
         System.out.println(customer.name + " " + customer.calculateSavings()); // now we used
         System.out.println(customer1.name + " "+ customer1.calculateSavings());
 
+        CustomerService customerService = new CustomerService();
+        customerService.displayCustomerProfile(customer);
+        customerService.displayCustomerProfile(customer1);
+
+        //customerService.calculateSavings(customer); //it returns not reused to print so we use sout
+        System.out.println(customer.name+ "Savings" + customerService.calculateSavings(customer));
+        //customerService.calculateSavings(customer1); // we just return not printed yet
+        System.out.println(customer1.name+"Savings"+customerService.calculateSavings(customer1));
+
+        //STATIC METHOD USING "CLASS NAME")
+        Customer.displayCompanyDetails();
+
     }
 }
